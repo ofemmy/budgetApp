@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Budgety</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,500" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-head">
+            <div id="main-display">
+                <h2 class="balance-display-month">
+                    <span id="month">&nbsp;</span> balance:</h2>
+                    <h2 class="balance-display-value">&#8364; <span>2000</span></h2>
+                <h3 class="income-display">total income:</h3>
+            <h3 class="expenses-display">total expenses:</h3>
+            <div id="button-budget">
+            <button class="button-budget_btn">Set Budget</button></div>
+            </div>
+            
+        </div>
+        <div id="input-field">
+            <select id="month-select">
+                <option value="">Choose Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <select id="expenditure-type-select">
+                <option value="income">income</option>
+                <option value="expenses">expenses </option>
+            </select>
+            <input type="text" placeholder="Add Description" class="description-box">
+            <input type="text" placeholder="Enter Value" class="value-box">
+            <button id="button-sub"><i class="ion-ios-checkmark-outline"></i></button>
+        </div>
+        <div id="container" class="clearfix">
+            <div class="income-box">
+                <h2 class="income-box-title">income</h2>
+                <div class="income-list">
+                    <div class="item clearfix">
+                        <div class="item_description">Salary</div>
+                        <div class="right clearfix">
+                            <div class="item_value">3000</div>
+                            <div class="item_remove">
+                                <button class="item-remove_btn"><i class="ion-ios-close-outline test"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                            <div class="item_description">Salary</div>
+                            <div class="right clearfix">
+                                <div class="item_value">3000</div>
+                                <div class="item_remove">
+                                    <button class="item-remove_btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="expense-box">
+                <h2 class="expense-box-title">expenses</h2>
+                <div class="income-list">
+                        <div class="item clearfix">
+                            <div class="item_description">Salary</div>
+                            <div class="right clearfix">
+                                <div class="item_value">3000</div>
+                                <div class="item_percentage">21%</div>
+                                <div class="item_remove">
+                                    <button class="item-remove_btn"><i class="ion-ios-close-outline test"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item clearfix">
+                                <div class="item_description">Salary</div>
+                                <div class="right clearfix">
+                                    <div class="item_value">3000</div>
+                                    <div class="item_percentage">21%</div>
+                                    <div class="item_remove">
+                                        <button class="item-remove_btn"><i class="ion-ios-close-outline"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                
+        </div>
+    </div>
+
+      <script src="script.js"></script>  
+    </body>
+</html>
